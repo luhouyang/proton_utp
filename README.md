@@ -1,3 +1,1 @@
-# proton_utp
-
-A new Flutter project.
+# Proton UTP
