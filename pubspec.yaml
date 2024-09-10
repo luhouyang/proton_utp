@@ -7,9 +7,11 @@ environment:
   sdk: ^3.5.2
 
 dependencies:
+  android_intent_plus: ^4.0.3
   animated_bottom_navigation_bar: ^1.3.3
   flutter:
     sdk: flutter
+  flutter_3d_controller: ^1.3.1
   flutter_map: ^7.0.2
   flutter_map_cancellable_tile_provider: ^3.0.0
   flutter_map_location_marker: ^9.1.0
@@ -27,3 +29,5 @@ flutter:
 
   assets:
     - 'assets/protoncar.webp'
+    - 'assets/proton-x50-arletalink/source/PROTON X50.glb'
+    - 'assets/PROTON_X50.glb'

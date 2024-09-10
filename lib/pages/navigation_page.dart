@@ -59,7 +59,7 @@ class _NavigationPageState extends State<NavigationPage> {
                   borderRadius: BorderRadius.circular(15),
                   child: SizedBox(
                     width: double.infinity,
-                    height: MediaQuery.of(context).size.height * 0.3,
+                    height: MediaQuery.of(context).size.height * 0.5,
                     child: map ??
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
