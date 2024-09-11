@@ -1,6 +1,6 @@
 name: proton_utp
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -28,6 +28,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - 'assets/protoncar.webp'
-    - 'assets/proton-x50-arletalink/source/PROTON X50.glb'
-    - 'assets/PROTON_X50.glb'
+    - "assets/protoncar.webp"
+    - "assets/protonx50_pic.png"
+    - "assets/proton-x50-arletalink/source/PROTON X50.glb"
+    - "assets/PROTON_X50.glb"

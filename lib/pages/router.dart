@@ -13,13 +13,12 @@ class RoutePage extends StatefulWidget {
 }
 
 class _RoutePageState extends State<RoutePage> {
-  int activeIndex = 0;
+  int activeIndex = 1;
 
   Widget getPage() {
     if (activeIndex == 0) {
       return const NavigationPage();
-    }
-    else if (activeIndex == 1) {
+    } else if (activeIndex == 1) {
       return const HomePage();
     } else if (activeIndex == 2) {
       return const CarHistoryPage();
@@ -39,6 +38,7 @@ class _RoutePageState extends State<RoutePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: const EdgeInsets.fromLTRB(16, 32, 16, 0),
         child: getPage(),

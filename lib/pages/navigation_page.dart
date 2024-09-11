@@ -49,7 +49,7 @@ class _NavigationPageState extends State<NavigationPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Navigation",
+                  "Charging Station Nearby",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 36, color: Colors.green),
                 ),
                 const SizedBox(
@@ -76,7 +76,6 @@ class _NavigationPageState extends State<NavigationPage> {
               ],
             ),
           ),
-
           Container(
             padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
             width: double.infinity,
@@ -119,18 +118,15 @@ class _NavigationPageState extends State<NavigationPage> {
         ),
         children: [
           TileLayer(
-            retinaMode: true, 
-            tileProvider: CancellableNetworkTileProvider(
-              headers: {'User-Agent': 'com.example.proton_utp/1.1.3'}),
+            retinaMode: true,
+            tileProvider: CancellableNetworkTileProvider(headers: {'User-Agent': 'com.example.proton_utp/1.1.3'}),
             urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
             // userAgentPackageName: "com.planthealthdtc.plant_health_data/flutter_map/7.0.2",
           ),
           // live location, orientation tracker
           LocationService().currerntLocationandOrientation(),
-          MarkerLayer(markers: [
-          Marker(point: LatLng(location.latitude ?? 0.0, location.longitude ?? 0.0), child: const Text('Car Location'))
-        ])
-        ], 
+          MarkerLayer(markers: [Marker(point: LatLng(location.latitude ?? 0.0, location.longitude ?? 0.0), child: const Text('Car Location'))])
+        ],
       );
     });
   }
